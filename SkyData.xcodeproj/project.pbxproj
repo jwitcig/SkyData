@@ -10,6 +10,8 @@
 		8BCC27A01C8E36F6005F25EE /* SkyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCC279F1C8E36F6005F25EE /* SkyData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCC27A71C8E36F6005F25EE /* SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC279C1C8E36F6005F25EE /* SkyData.framework */; };
 		8BCC27AC1C8E36F6005F25EE /* SkyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */; };
+		8BCC27DA1C8E37A3005F25EE /* SDCloudCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */; };
+		8BCC27DC1C8E45AC005F25EE /* SDDataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27DB1C8E45AC005F25EE /* SDDataOperations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		8BCC27A61C8E36F6005F25EE /* SkyDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyDataTests.swift; sourceTree = "<group>"; };
 		8BCC27AD1C8E36F6005F25EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudCoordinator.swift; sourceTree = "<group>"; };
+		8BCC27DB1C8E45AC005F25EE /* SDDataOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDataOperations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 		8BCC279E1C8E36F6005F25EE /* SkyData */ = {
 			isa = PBXGroup;
 			children = (
+				8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */,
+				8BCC27DB1C8E45AC005F25EE /* SDDataOperations.swift */,
 				8BCC279F1C8E36F6005F25EE /* SkyData.h */,
 				8BCC27A11C8E36F6005F25EE /* Info.plist */,
 			);
@@ -194,6 +200,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BCC27DC1C8E45AC005F25EE /* SDDataOperations.swift in Sources */,
+				8BCC27DA1C8E37A3005F25EE /* SDCloudCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +384,7 @@
 				8BCC27B21C8E36F6005F25EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8BCC27B31C8E36F6005F25EE /* Build configuration list for PBXNativeTarget "SkyDataTests" */ = {
 			isa = XCConfigurationList;
@@ -384,6 +393,7 @@
 				8BCC27B51C8E36F6005F25EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
