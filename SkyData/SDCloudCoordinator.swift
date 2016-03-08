@@ -9,13 +9,7 @@
 import Foundation
 import CloudKit
 
-public typealias SDCompletionHandler = (operationResponse: SDDataOperationResponse) -> ()
-
-public typealias SDCompletionHandlerRecordsIDs = (recordIDs: [CKRecordID], operationResponse: SDDataOperationResponse) -> ()
-
-public typealias SDCompletionHandlerRecords = (records: [CKRecord], operationResponse: SDDataOperationResponse) -> ()
-
-public class SDDataCoordinator {
+public class SDDataCoordinator: SDCoordinator {
     
     internal var mainOperationQueue = NSOperationQueue()
     
@@ -27,7 +21,7 @@ public class SDDataCoordinator {
         self.database = database
     }
     
-    public func fetchIDs(operation operation: SDDataOperation, completionHandler: SDCompletionHandlerRecordsIDs) {
+    public func fetchIDs(operation operation: SDCloudDataOperation, completionHandler: SDResponseCompletionHandlerRecordsIDs) {
         
         guard let recordType = operation.recordType else { print("Must supply recordType for this operation."); return }
         
@@ -51,7 +45,7 @@ public class SDDataCoordinator {
         mainOperationQueue.addOperation(queryOperation)
     }
     
-    public func fetch(operation operation: SDDataOperation, completionHandler: SDCompletionHandlerRecords) {
+    public func fetch(operation operation: SDCloudDataOperation, completionHandler: SDResponseCompletionHandlerRecords) {
 
         guard let recordType = operation.recordType else { print("Must supply recordType for this operation."); return }
         
@@ -77,12 +71,12 @@ public class SDDataCoordinator {
         mainOperationQueue.addOperation(queryOperation)
     }
     
-    public func save(record record: CKRecord, operation: SDDataOperation = SDDataOperation(), completionHandler: SDCompletionHandler) {
+    public func save(record record: CKRecord, operation: SDCloudDataOperation = SDCloudDataOperation(), completionHandler: SDResponseCompletionHandler) {
         
         save(records: [record], operation: operation, completionHandler: completionHandler)
     }
     
-    public func save(records records: [CKRecord], operation: SDDataOperation = SDDataOperation(), completionHandler: SDCompletionHandler) {
+    public func save(records records: [CKRecord], operation: SDCloudDataOperation = SDCloudDataOperation(), completionHandler: SDResponseCompletionHandler) {
         
         let saveOperation = CKModifyRecordsOperation(recordsToSave: records, recordIDsToDelete: nil)
         saveOperation.database = operation.database ?? database

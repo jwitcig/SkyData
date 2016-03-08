@@ -11,7 +11,16 @@
 		8BCC27A71C8E36F6005F25EE /* SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC279C1C8E36F6005F25EE /* SkyData.framework */; };
 		8BCC27AC1C8E36F6005F25EE /* SkyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */; };
 		8BCC27DA1C8E37A3005F25EE /* SDCloudCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */; };
-		8BCC27DC1C8E45AC005F25EE /* SDDataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27DB1C8E45AC005F25EE /* SDDataOperations.swift */; };
+		8BCC27DC1C8E45AC005F25EE /* DataOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27DB1C8E45AC005F25EE /* DataOperations.swift */; };
+		8BCC27DE1C8E495A005F25EE /* SDLocalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27DD1C8E495A005F25EE /* SDLocalCoordinator.swift */; };
+		8BCC27E01C8E4990005F25EE /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27DF1C8E4990005F25EE /* Protocols.swift */; };
+		8BCC27E21C8E7E3B005F25EE /* SDCloudQueryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27E11C8E7E3B005F25EE /* SDCloudQueryOperation.swift */; };
+		8BCC27E61C8E8075005F25EE /* SDLocalQueryOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27E51C8E8075005F25EE /* SDLocalQueryOperation.swift */; };
+		8BCC27E81C8E8357005F25EE /* SDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27E71C8E8357005F25EE /* SDSession.swift */; };
+		8BCC27EA1C8E8A80005F25EE /* SDCloudFetchObjectOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27E91C8E8A80005F25EE /* SDCloudFetchObjectOperation.swift */; };
+		8BDE94EE1C8E93FD009439A8 /* SDCloudModifyOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE94ED1C8E93FD009439A8 /* SDCloudModifyOperation.swift */; };
+		8BDE94F01C8E97C1009439A8 /* SDCloudSaveOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE94EF1C8E97C1009439A8 /* SDCloudSaveOperation.swift */; };
+		8BDE94F21C8E9A67009439A8 /* SDCloudDeleteOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDE94F11C8E9A67009439A8 /* SDCloudDeleteOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,16 @@
 		8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyDataTests.swift; sourceTree = "<group>"; };
 		8BCC27AD1C8E36F6005F25EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudCoordinator.swift; sourceTree = "<group>"; };
-		8BCC27DB1C8E45AC005F25EE /* SDDataOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDataOperations.swift; sourceTree = "<group>"; };
+		8BCC27DB1C8E45AC005F25EE /* DataOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataOperations.swift; sourceTree = "<group>"; };
+		8BCC27DD1C8E495A005F25EE /* SDLocalCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDLocalCoordinator.swift; sourceTree = "<group>"; };
+		8BCC27DF1C8E4990005F25EE /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		8BCC27E11C8E7E3B005F25EE /* SDCloudQueryOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudQueryOperation.swift; sourceTree = "<group>"; };
+		8BCC27E51C8E8075005F25EE /* SDLocalQueryOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDLocalQueryOperation.swift; sourceTree = "<group>"; };
+		8BCC27E71C8E8357005F25EE /* SDSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDSession.swift; sourceTree = "<group>"; };
+		8BCC27E91C8E8A80005F25EE /* SDCloudFetchObjectOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudFetchObjectOperation.swift; sourceTree = "<group>"; };
+		8BDE94ED1C8E93FD009439A8 /* SDCloudModifyOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudModifyOperation.swift; sourceTree = "<group>"; };
+		8BDE94EF1C8E97C1009439A8 /* SDCloudSaveOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudSaveOperation.swift; sourceTree = "<group>"; };
+		8BDE94F11C8E9A67009439A8 /* SDCloudDeleteOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCloudDeleteOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +93,11 @@
 		8BCC279E1C8E36F6005F25EE /* SkyData */ = {
 			isa = PBXGroup;
 			children = (
-				8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */,
-				8BCC27DB1C8E45AC005F25EE /* SDDataOperations.swift */,
+				8BCC27E71C8E8357005F25EE /* SDSession.swift */,
+				8BCC27E41C8E8065005F25EE /* Local Operations */,
+				8BCC27E31C8E7E40005F25EE /* Cloud Operations */,
+				8BCC27DB1C8E45AC005F25EE /* DataOperations.swift */,
+				8BCC27DF1C8E4990005F25EE /* Protocols.swift */,
 				8BCC279F1C8E36F6005F25EE /* SkyData.h */,
 				8BCC27A11C8E36F6005F25EE /* Info.plist */,
 			);
@@ -90,6 +111,28 @@
 				8BCC27AD1C8E36F6005F25EE /* Info.plist */,
 			);
 			path = SkyDataTests;
+			sourceTree = "<group>";
+		};
+		8BCC27E31C8E7E40005F25EE /* Cloud Operations */ = {
+			isa = PBXGroup;
+			children = (
+				8BCC27D71C8E37A3005F25EE /* SDCloudCoordinator.swift */,
+				8BCC27E11C8E7E3B005F25EE /* SDCloudQueryOperation.swift */,
+				8BCC27E91C8E8A80005F25EE /* SDCloudFetchObjectOperation.swift */,
+				8BDE94ED1C8E93FD009439A8 /* SDCloudModifyOperation.swift */,
+				8BDE94EF1C8E97C1009439A8 /* SDCloudSaveOperation.swift */,
+				8BDE94F11C8E9A67009439A8 /* SDCloudDeleteOperation.swift */,
+			);
+			name = "Cloud Operations";
+			sourceTree = "<group>";
+		};
+		8BCC27E41C8E8065005F25EE /* Local Operations */ = {
+			isa = PBXGroup;
+			children = (
+				8BCC27DD1C8E495A005F25EE /* SDLocalCoordinator.swift */,
+				8BCC27E51C8E8075005F25EE /* SDLocalQueryOperation.swift */,
+			);
+			name = "Local Operations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,8 +243,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8BCC27DC1C8E45AC005F25EE /* SDDataOperations.swift in Sources */,
+				8BCC27DC1C8E45AC005F25EE /* DataOperations.swift in Sources */,
+				8BCC27E61C8E8075005F25EE /* SDLocalQueryOperation.swift in Sources */,
+				8BCC27E81C8E8357005F25EE /* SDSession.swift in Sources */,
+				8BCC27DE1C8E495A005F25EE /* SDLocalCoordinator.swift in Sources */,
+				8BCC27EA1C8E8A80005F25EE /* SDCloudFetchObjectOperation.swift in Sources */,
 				8BCC27DA1C8E37A3005F25EE /* SDCloudCoordinator.swift in Sources */,
+				8BCC27E01C8E4990005F25EE /* Protocols.swift in Sources */,
+				8BDE94EE1C8E93FD009439A8 /* SDCloudModifyOperation.swift in Sources */,
+				8BCC27E21C8E7E3B005F25EE /* SDCloudQueryOperation.swift in Sources */,
+				8BDE94F01C8E97C1009439A8 /* SDCloudSaveOperation.swift in Sources */,
+				8BDE94F21C8E9A67009439A8 /* SDCloudDeleteOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
