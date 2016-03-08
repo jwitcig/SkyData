@@ -1,5 +1,5 @@
 //
-//  adsf.swift
+//  SDLocalQueryOperation.swift
 //  SkyData
 //
 //  Created by Developer on 3/7/16.
@@ -7,6 +7,8 @@
 //
 
 import CoreData
+
+import SwiftTools
 
 public struct SDLocalQueryOperation: SDLocalOperation, SDQueryOperation {
     
@@ -20,32 +22,36 @@ public struct SDLocalQueryOperation: SDLocalOperation, SDQueryOperation {
     
     public var recordType: String
     
-    public var managedObjectContext: NSManagedObjectContext?
+    public var managedObjectContext = NSManagedObjectContext.contextForCurrentThread()
     
-    public var desiredKeys: [String]?
     public var resultsLimit = 0
     public var sortDescriptors: [NSSortDescriptor]?
     
     public var completionHandler: SDCompletionHandlerManagedObjects?
     
     public mutating func executeOperation() {
-        let queue = operationQueue ?? currentSession.operationQueue
         
-        modifyOperation.database = database ?? currentSession.cloudDatabase
+        let fetchRequest = NSFetchRequest(entityName: recordType)
+        fetchRequest.predicate = compoundPredicate
+        fetchRequest.fetchLimit = resultsLimit
         
-        
-        modifyOperation.modifyRecordsCompletionBlock = { savedRecords, deletedRecordsIDs, error in
-            self.operationEnd = NSDate()
+        managedObjectContext.performBlock {
+            var managedObjects = [NSManagedObject]()
+            var error: NSError?
             
+            do {
+                managedObjects = try self.managedObjectContext.executeFetchRequest(fetchRequest) as! [NSManagedObject]
+            } catch let err as NSError {
+                error = err
+            }
+            
+            self.operationEnd = NSDate()
+
             var operationResponse = SDOperationResponse(operation: self)
             operationResponse.error = error
-            operationResponse.otherOperations = [self.modifyOperation]
-            
-            self.completionHandler?(savedRecords: savedRecords ?? [], deletedRecordsIDs: deletedRecordsIDs ?? [], operationResponse: operationResponse)
+
+            self.completionHandler?(managedObjects: managedObjects, operationResponse: operationResponse)
         }
-        
-        queue.addOperation(modifyOperation)
-        
     }
 
 }

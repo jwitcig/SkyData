@@ -40,8 +40,7 @@ public struct SDCloudModifyOperation: SDCloudOperation, SDModifyOperation {
         let queue = operationQueue ?? currentSession.operationQueue
         
         modifyOperation.database = database ?? currentSession.cloudDatabase
-        
-        
+                
         modifyOperation.modifyRecordsCompletionBlock = { savedRecords, deletedRecordsIDs, error in
            self.operationEnd = NSDate()
             

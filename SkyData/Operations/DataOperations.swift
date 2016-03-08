@@ -29,7 +29,6 @@ public protocol SDCloudOperation: SDOperation {
 public protocol SDQueryOperation: SDOperation {
     var recordType: String { get }
     
-    var desiredKeys: [String]? { get set }
     var resultsLimit: Int { get set }
     var sortDescriptors: [NSSortDescriptor]? { get set }
 }
