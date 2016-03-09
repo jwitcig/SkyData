@@ -38,6 +38,7 @@ class SDServerStoreConfig {
             let subscription = CKSubscription(recordType: entityName, predicate: predicate, subscriptionID: subscriptionID, options: [.FiresOnce, .FiresOnRecordCreation, .FiresOnRecordUpdate, .FiresOnRecordDeletion])
             
             subscription.notificationInfo = CKNotificationInfo()
+            subscription.notificationInfo?.alertBody = "RecordEvent"
             
             return subscription
         }
