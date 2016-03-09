@@ -35,7 +35,7 @@ class SDServerStoreConfig {
             
             let predicate = NSPredicate.allRows
             let subscriptionID = "\(entityName)SyncSubscription"
-            let subscription = CKSubscription(recordType: entityName, predicate: predicate, subscriptionID: subscriptionID, options: [.FiresOnce, .FiresOnRecordCreation, .FiresOnRecordUpdate, .FiresOnRecordDeletion])
+            let subscription = CKSubscription(recordType: entityName, predicate: predicate, subscriptionID: subscriptionID, options: [.FiresOnRecordCreation, .FiresOnRecordUpdate, .FiresOnRecordDeletion])
             
             subscription.notificationInfo = CKNotificationInfo()
             subscription.notificationInfo?.alertBody = "RecordEvent"
