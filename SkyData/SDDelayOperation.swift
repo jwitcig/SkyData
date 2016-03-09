@@ -6,10 +6,11 @@
 //  Copyright © 2016 JwitApps. All rights reserved.
 //
 
+import SwiftTools
 
 class SDDelayOperation: NSOperation {
     
-    override var asynchronous: Bool { return true }
+    override var asynchronous: Bool { return false }
     
     var _executing = false
     var _finished = false
@@ -32,8 +33,6 @@ class SDDelayOperation: NSOperation {
     
     var delayDuration: Double
     
-    var timer: NSTimer?
-    
     init(delayDuration: Double) {
         self.delayDuration = delayDuration
     }
@@ -47,12 +46,13 @@ class SDDelayOperation: NSOperation {
     }
     
     func startTimer() {
-        timer = NSTimer.scheduledTimerWithTimeInterval(delayDuration, target: self, selector: Selector("completed"), userInfo: nil, repeats: false)
+        runOnMainThread {
+            self.performSelector("completed", withObject: nil, afterDelay: self.delayDuration)
+        }
     }
     
     func stopTimer() {
-        timer?.invalidate()
-        timer = nil
+        NSObject.cancelPreviousPerformRequestsWithTarget(self, selector: "completed", object: nil)
     }
     
     override func main() {
@@ -71,8 +71,6 @@ class SDDelayOperation: NSOperation {
     }
     
     func completed() {
-        completionBlock?()
-        
         print("[SkyData] Ended SDDelayOperation")
         
         self.executing = false

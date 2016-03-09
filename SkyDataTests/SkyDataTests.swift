@@ -2,11 +2,12 @@
 //  SkyDataTests.swift
 //  SkyDataTests
 //
-//  Created by Developer on 3/7/16.
+//  Created by Developer on 3/9/16.
 //  Copyright © 2016 JwitApps. All rights reserved.
 //
 
 import XCTest
+
 @testable import SkyData
 
 class SkyDataTests: XCTestCase {
@@ -21,16 +22,17 @@ class SkyDataTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    func testDelayOperation() {
+        let expectation = expectationWithDescription("")
+
+        let delayOperation = SDDelayOperation(delayDuration: 0.2)
+        delayOperation.completionBlock = {
+            expectation.fulfill()
         }
+        
+        NSOperationQueue().addOperation(delayOperation)
+        
+        waitForExpectationsWithTimeout(3, handler: nil)
     }
     
 }
