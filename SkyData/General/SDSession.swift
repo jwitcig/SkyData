@@ -13,17 +13,17 @@ public class SDSession {
     
     public static var defaultSession = SDSession()
     
-    var currentUserRecordID: CKRecordID?
+    public var currentUserRecordID: CKRecordID?
     
-    var container: CKContainer!
+    public var container: CKContainer!
     var managedObjectModel: NSManagedObjectModel!
     
-    init(container: CKContainer? = nil, managedObjectModel: NSManagedObjectModel? = nil) {
+    public init(container: CKContainer? = nil, managedObjectModel: NSManagedObjectModel? = nil) {
         self.container = container
         self.managedObjectModel = managedObjectModel
     }
     
-    func setup(container: CKContainer, managedObjectModel: NSManagedObjectModel) {
+    public func setup(container: CKContainer, managedObjectModel: NSManagedObjectModel) {
         var operations = [NSOperation]()
         
         let fetchUserIDOperation = SDFetchUserIDOperation(container: container)
