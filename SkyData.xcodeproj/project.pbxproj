@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8B49425E1C8EB11C007F273A /* SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B49425D1C8EB11C007F273A /* SwiftTools.framework */; };
 		8B4942771C8EBA7A007F273A /* SDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49426D1C8EBA7A007F273A /* SDSession.swift */; };
 		8BCC27A01C8E36F6005F25EE /* SkyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCC279F1C8E36F6005F25EE /* SkyData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCC27A71C8E36F6005F25EE /* SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC279C1C8E36F6005F25EE /* SkyData.framework */; };
 		8BCC27AC1C8E36F6005F25EE /* SkyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */; };
 		8BE9D09E1C8FC2E200550054 /* SDServerStoreSetupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09D1C8FC2E200550054 /* SDServerStoreSetupOperation.swift */; };
 		8BE9D0A01C8FD1BB00550054 /* SDFetchUserIDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */; };
+		8BE9D0A41C8FD58000550054 /* SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B49425D1C8EB11C007F273A /* SwiftTools.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B49425E1C8EB11C007F273A /* SwiftTools.framework in Frameworks */,
+				8BE9D0A41C8FD58000550054 /* SwiftTools.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +394,7 @@
 				);
 				INFOPLIST_FILE = SkyData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.SkyData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +415,7 @@
 				);
 				INFOPLIST_FILE = SkyData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.SkyData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
