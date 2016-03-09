@@ -14,6 +14,7 @@
 		8BE9D09E1C8FC2E200550054 /* SDServerStoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */; };
 		8BE9D0A01C8FD1BB00550054 /* SDFetchUserIDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */; };
 		8BE9D0A41C8FD58000550054 /* SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B49425D1C8EB11C007F273A /* SwiftTools.framework */; };
+		8BE9D0F11C901A2000550054 /* SDDelayOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D0F01C901A2000550054 /* SDDelayOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		8BCC27AD1C8E36F6005F25EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDServerStoreConfig.swift; sourceTree = "<group>"; };
 		8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFetchUserIDOperation.swift; sourceTree = "<group>"; };
+		8BE9D0F01C901A2000550054 /* SDDelayOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDelayOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */,
 				8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */,
+				8BE9D0F01C901A2000550054 /* SDDelayOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				8B4942771C8EBA7A007F273A /* SDSession.swift in Sources */,
 				8BE9D09E1C8FC2E200550054 /* SDServerStoreConfig.swift in Sources */,
 				8BE9D0A01C8FD1BB00550054 /* SDFetchUserIDOperation.swift in Sources */,
+				8BE9D0F11C901A2000550054 /* SDDelayOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

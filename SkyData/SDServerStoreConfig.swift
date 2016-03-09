@@ -51,5 +51,4 @@ class SDServerStoreConfig {
         saveSubscriptionsOperation.subscriptionsToSave = subscriptions
     }
     
-    
 }

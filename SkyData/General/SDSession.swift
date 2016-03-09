@@ -18,6 +18,9 @@ public class SDSession {
     public var container: CKContainer!
     var managedObjectModel: NSManagedObjectModel!
     
+    private static let NOTIFICATION_DELAY_DURATION = 1.2
+    var notificationReceiverDelayOperation: SDDelayOperation?
+    
     public init(container: CKContainer? = nil, managedObjectModel: NSManagedObjectModel? = nil) {
         self.container = container
         self.managedObjectModel = managedObjectModel
@@ -44,6 +47,31 @@ public class SDSession {
 
         
         NSOperationQueue().addOperations(operations, waitUntilFinished: false)
+    }
+    
+    public func handlePush(userInfo: [String: AnyObject]) {
+        let delayOperation = notificationReceiverDelayOperation ?? SDDelayOperation(delayDuration: SDSession.NOTIFICATION_DELAY_DURATION)
+        
+        if delayOperation.executing && delayOperation.finished == false {
+            delayOperation.cancelAndRestart()
+        }
+        
+        guard let notificationInfo = userInfo as? [String: NSObject] else {
+            print("Error: Could not cast push info dictionary")
+            return
+        }
+        
+        delayOperation.completionBlock = {
+            self.notificationReceiverDelayOperation = nil
+        }
+        
+        let cloudKitNotification = CKNotification(fromRemoteNotificationDictionary: notificationInfo)
+        if let queryNotification = cloudKitNotification as? CKQueryNotification {
+            
+            print(queryNotification.queryNotificationReason)
+            
+        }
+        NSOperationQueue().addOperation(delayOperation)
     }
     
 }
