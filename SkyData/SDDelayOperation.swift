@@ -43,7 +43,7 @@ class SDDelayOperation: NSOperation {
         
         print("[SkyData] Started SDDelayOperation")
     
-        
+        startTimer()
     }
     
     func startTimer() {
