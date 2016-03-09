@@ -35,11 +35,11 @@ public class SDSession {
         }
         operations.append(fetchUserIDOperation)
         
-        
-        let serverSetupOperation = SDServerStoreSetupOperation(database: container.publicCloudDatabase, managedObjectModel: managedObjectModel)
-        serverSetupOperation.addDependency(fetchUserIDOperation)
+        print("[SkyData] Started SDServerStoreSetupOperation")
+        let serverConfig = SDServerStoreConfig(database: container.publicCloudDatabase, managedObjectModel: managedObjectModel)
+        serverConfig.saveSubscriptionsOperation.addDependency(fetchUserIDOperation)
 
-        operations.append(serverSetupOperation)
+        operations.append(serverConfig.saveSubscriptionsOperation)
 
         
         NSOperationQueue().addOperations(operations, waitUntilFinished: false)

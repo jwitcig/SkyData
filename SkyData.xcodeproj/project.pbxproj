@@ -11,7 +11,7 @@
 		8BCC27A01C8E36F6005F25EE /* SkyData.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BCC279F1C8E36F6005F25EE /* SkyData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8BCC27A71C8E36F6005F25EE /* SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC279C1C8E36F6005F25EE /* SkyData.framework */; };
 		8BCC27AC1C8E36F6005F25EE /* SkyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */; };
-		8BE9D09E1C8FC2E200550054 /* SDServerStoreSetupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09D1C8FC2E200550054 /* SDServerStoreSetupOperation.swift */; };
+		8BE9D09E1C8FC2E200550054 /* SDServerStoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */; };
 		8BE9D0A01C8FD1BB00550054 /* SDFetchUserIDOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */; };
 		8BE9D0A41C8FD58000550054 /* SwiftTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B49425D1C8EB11C007F273A /* SwiftTools.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		8BCC27A61C8E36F6005F25EE /* SkyDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCC27AB1C8E36F6005F25EE /* SkyDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkyDataTests.swift; sourceTree = "<group>"; };
 		8BCC27AD1C8E36F6005F25EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8BE9D09D1C8FC2E200550054 /* SDServerStoreSetupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDServerStoreSetupOperation.swift; sourceTree = "<group>"; };
+		8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDServerStoreConfig.swift; sourceTree = "<group>"; };
 		8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFetchUserIDOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,7 +143,7 @@
 				8B49426B1C8EBA7A007F273A /* SDCloudFetchObjectOperation.swift */,
 				8B49426C1C8EBA7A007F273A /* SDCloudDeleteOperation.swift */,
 				8B49427A1C8F6164007F273A /* SDSaveOperation.swift */,
-				8BE9D09D1C8FC2E200550054 /* SDServerStoreSetupOperation.swift */,
+				8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */,
 				8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */,
 			);
 			name = "Cloud Operations";
@@ -268,7 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B4942771C8EBA7A007F273A /* SDSession.swift in Sources */,
-				8BE9D09E1C8FC2E200550054 /* SDServerStoreSetupOperation.swift in Sources */,
+				8BE9D09E1C8FC2E200550054 /* SDServerStoreConfig.swift in Sources */,
 				8BE9D0A01C8FD1BB00550054 /* SDFetchUserIDOperation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
