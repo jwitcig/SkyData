@@ -42,7 +42,8 @@ class SDFetchUserIDOperation: NSOperation {
     override func start() {
         executing = true
         
-        print("[SkyData] Starting SDFetchUserIDOperation")
+        print("[SkyData] Started SDFetchUserIDOperation")
+        
         container.fetchUserRecordIDWithCompletionHandler { userRecordID, error in
             print("[SkyData] userRecordID: \(userRecordID)")
             
