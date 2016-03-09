@@ -43,6 +43,7 @@ class SDServerStoreSetupOperation: CKModifySubscriptionsOperation {
     }
     
     override func start() {
+        print("[SkyData] Starting SDServerStoreSetupOperation")
         executing = true
         
         createSubscriptions()
@@ -65,6 +66,8 @@ class SDServerStoreSetupOperation: CKModifySubscriptionsOperation {
         completionBlock = {
             self.executing = false
             self.finished = true
+            
+            print("[SkyData] Completed SDServerStoreSetupOperation")
         }
         
         subscriptionsToSave = subscriptions

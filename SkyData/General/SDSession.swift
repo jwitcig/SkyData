@@ -24,6 +24,9 @@ public class SDSession {
     }
     
     public func setup(container: CKContainer, managedObjectModel: NSManagedObjectModel) {
+        self.container = container
+        self.managedObjectModel = managedObjectModel
+        
         var operations = [NSOperation]()
         
         let fetchUserIDOperation = SDFetchUserIDOperation(container: container)
