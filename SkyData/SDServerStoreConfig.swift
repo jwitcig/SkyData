@@ -39,6 +39,7 @@ class SDServerStoreConfig {
             
             subscription.notificationInfo = CKNotificationInfo()
             subscription.notificationInfo?.alertBody = "RecordEvent"
+            subscription.notificationInfo?.shouldSendContentAvailable = true
             
             return subscription
         }
