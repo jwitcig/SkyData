@@ -23,6 +23,7 @@ class SDServerStoreConfig {
         self.database = database
 
         self.saveSubscriptionsOperation = CKModifySubscriptionsOperation(subscriptionsToSave: nil, subscriptionIDsToDelete: nil)
+        self.saveSubscriptionsOperation.database = database
         
         createSubscriptions()
     }
