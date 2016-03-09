@@ -52,8 +52,10 @@ public class SDSession {
     public func handlePush(userInfo userInfo: [NSObject : AnyObject]) {
         let delayOperation = notificationReceiverDelayOperation ?? SDDelayOperation(delayDuration: SDSession.NOTIFICATION_DELAY_DURATION)
         
+        var newDelay = true
         if delayOperation.executing && delayOperation.finished == false {
             delayOperation.cancelAndRestart()
+            newDelay = false
         }
         
         guard let notificationInfo = userInfo as? [String: NSObject] else {
@@ -71,7 +73,9 @@ public class SDSession {
             print(queryNotification.queryNotificationReason)
             
         }
-        NSOperationQueue().addOperation(delayOperation)
+        if newDelay {
+            NSOperationQueue().addOperation(delayOperation)
+        }
     }
     
 }
