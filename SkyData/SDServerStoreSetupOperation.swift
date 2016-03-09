@@ -48,6 +48,8 @@ class SDServerStoreSetupOperation: CKModifySubscriptionsOperation {
         print("[SkyData] Started SDServerStoreSetupOperation")
         
         createSubscriptions()
+        
+        super.start()
     }
     
     func createSubscriptions() {
