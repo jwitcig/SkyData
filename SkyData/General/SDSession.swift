@@ -49,7 +49,7 @@ public class SDSession {
         NSOperationQueue().addOperations(operations, waitUntilFinished: false)
     }
     
-    public func handlePush(userInfo: [String: AnyObject]) {
+    public func handlePush(userInfo userInfo: [NSObject : AnyObject]) {
         let delayOperation = notificationReceiverDelayOperation ?? SDDelayOperation(delayDuration: SDSession.NOTIFICATION_DELAY_DURATION)
         
         if delayOperation.executing && delayOperation.finished == false {
