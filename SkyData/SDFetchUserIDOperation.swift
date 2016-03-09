@@ -48,10 +48,12 @@ class SDFetchUserIDOperation: NSOperation {
             print("[SkyData] userRecordID: \(userRecordID)")
             
             self.userRecordID = userRecordID
+            
+            print("[SkyData] Completed SDFetchUserIDOperation")
+
             self.executing = false
             self.finished = true
             
-            print("[SkyData] Completed SDFetchUserIDOperation")
         }
     }
     

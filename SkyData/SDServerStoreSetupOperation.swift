@@ -49,7 +49,7 @@ class SDServerStoreSetupOperation: CKModifySubscriptionsOperation {
         
         createSubscriptions()
         
-        super.start()
+        database?.addOperation(self)
     }
     
     func createSubscriptions() {
