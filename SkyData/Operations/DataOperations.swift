@@ -15,15 +15,11 @@ public protocol SDOperation {
 }
 
 public protocol SDLocalOperation: SDOperation {    
-    mutating func executeOperation()
+
 }
 
 public protocol SDCloudOperation: SDOperation {
-    var operation: NSOperation { get }
-    
-    func addDependency(dataOperation: SDCloudOperation)
-    
-    mutating func executeOperation(operationQueue: NSOperationQueue?)
+
 }
 
 public protocol SDQueryOperation: SDOperation {

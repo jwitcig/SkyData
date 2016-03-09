@@ -11,14 +11,35 @@ import CoreData
 
 public class SDSession {
     
-    public static var currentSession = SDSession()
+    public static var defaultSession = SDSession()
     
-    internal var operationQueue = NSOperationQueue()
+    var currentUserRecordID: CKRecordID?
     
-    var cloudDatabase: CKDatabase?
+    var container: CKContainer!
+    var managedObjectModel: NSManagedObjectModel!
     
-    init(cloudDatabase: CKDatabase? = nil) {
-        self.cloudDatabase = cloudDatabase
+    init(container: CKContainer? = nil, managedObjectModel: NSManagedObjectModel? = nil) {
+        self.container = container
+        self.managedObjectModel = managedObjectModel
+    }
+    
+    func setup(container: CKContainer, managedObjectModel: NSManagedObjectModel) {
+        var operations = [NSOperation]()
+        
+        let fetchUserIDOperation = SDFetchUserIDOperation(container: container)
+        fetchUserIDOperation.completionBlock = {
+            self.currentUserRecordID = fetchUserIDOperation.userRecordID
+        }
+        operations.append(fetchUserIDOperation)
+        
+        
+        let serverSetupOperation = SDServerStoreSetupOperation(database: container.publicCloudDatabase, managedObjectModel: managedObjectModel)
+        serverSetupOperation.addDependency(fetchUserIDOperation)
+
+        operations.append(serverSetupOperation)
+
+        
+        NSOperationQueue().addOperations(operations, waitUntilFinished: false)
     }
     
 }
