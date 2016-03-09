@@ -44,8 +44,6 @@ class SDServerStoreConfig {
         
         saveSubscriptionsOperation.modifySubscriptionsCompletionBlock = { subscriptions, subscriptionIDs, error in
             print("[SkyData] Completed SDServerStoreSetupOperation")
-
-            self.saveSubscriptionsOperation.completionBlock?()
         }
         
         saveSubscriptionsOperation.subscriptionsToSave = subscriptions

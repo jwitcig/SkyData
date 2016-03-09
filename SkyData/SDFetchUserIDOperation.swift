@@ -51,9 +51,7 @@ class SDFetchUserIDOperation: NSOperation {
             
             print("[SkyData] Completed SDFetchUserIDOperation")
 
-            self.executing = false
-            self.finished = true
-            
+            self.completed()
         }
     }
     
@@ -61,6 +59,11 @@ class SDFetchUserIDOperation: NSOperation {
         if cancelled {
             return
         }
+    }
+    
+    func completed() {
+        self.executing = false
+        self.finished = true
     }
     
 }

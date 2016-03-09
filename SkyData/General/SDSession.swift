@@ -35,7 +35,8 @@ public class SDSession {
         }
         operations.append(fetchUserIDOperation)
         
-        print("[SkyData] Started SDServerStoreSetupOperation")
+//        print("[SkyData] Started SDServerStoreSetupOperation")
+        
         let serverConfig = SDServerStoreConfig(database: container.publicCloudDatabase, managedObjectModel: managedObjectModel)
         serverConfig.saveSubscriptionsOperation.addDependency(fetchUserIDOperation)
 
