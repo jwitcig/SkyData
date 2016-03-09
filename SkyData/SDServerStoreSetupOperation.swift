@@ -42,8 +42,8 @@ class SDServerStoreSetupOperation: CKModifySubscriptionsOperation {
         self.database = database
     }
     
+    // We don't set the 'executing' because we are using super.start() which will handle starting execution
     override func start() {
-        executing = true
 
         print("[SkyData] Started SDServerStoreSetupOperation")
         
