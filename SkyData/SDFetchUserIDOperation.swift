@@ -41,16 +41,18 @@ class SDFetchUserIDOperation: NSOperation {
     
     override func start() {
         executing = true
+        print("[SkyData] Started SDFetchUserIDOperation")
         
-        print("[SkyData] Starting SDFetchUserIDOperation")
         container.fetchUserRecordIDWithCompletionHandler { userRecordID, error in
             print("[SkyData] userRecordID: \(userRecordID)")
             
             self.userRecordID = userRecordID
+            
+            print("[SkyData] Completed SDFetchUserIDOperation")
+            
             self.executing = false
             self.finished = true
             
-            print("[SkyData] Completed SDFetchUserIDOperation")
         }
     }
     
