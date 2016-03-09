@@ -49,6 +49,7 @@ class SDServerStoreSetupOperation: CKModifySubscriptionsOperation {
         
         createSubscriptions()
         
+        cancel()
         database?.addOperation(self)
     }
     
