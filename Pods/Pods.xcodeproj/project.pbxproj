@@ -1,0 +1,555 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B109981578903A4EDE6C28F9F7E0881 /* Pods-SkyData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B1188A8AA67A0DB97CB34CD83BA793 /* Pods-SkyData-dummy.m */; };
+		1E439CDCBCA7E44DE340376AE369E64B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		47644033CDC159426A1C53DF17C65BB4 /* Pods-SkyData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E63D74E07B9FD923D02D70439A41CF13 /* Pods-SkyData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A8F7AF8EB0D20954452048E6E42C586 /* STCoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271798E7BD7413E4C90D71467F88A36C /* STCoreDataExtensions.swift */; };
+		5B4A9F08A822177E9C4065C3C3E1F954 /* SwiftTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3AABFA1E6B6DD17D39A55C6962C6ED /* SwiftTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A812FE8FBE84446201FE40DF1F67FC1 /* SwiftTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D6C6AE8D9DD2BEDD2CC2BB55C7AF14 /* SwiftTools-dummy.m */; };
+		6F09C06C9FECBDF4F66DA6DCBFF16881 /* STMultiThreadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A57A462172ACC4930AD4F21D7E94E /* STMultiThreadingExtensions.swift */; };
+		81DA33BA4F4A852917804B8C444D906F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		852CB6A39E0AD12D280929C51853EFDA /* STStandardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE25D5B3C9E6909C861D677EAC87F2 /* STStandardExtensions.swift */; };
+		B64CE7338C168D85531FF84B0A36035A /* STDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABD289CF9ECFF168C4E241E36E6F7F /* STDataSet.swift */; };
+		CDC74C461CE426481119D0346776B75C /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7183B530D93499178B3F81B4EA75F4 /* Other.swift */; };
+		F588D2DCB3CFA04963266EBD6FD4DBC5 /* STCloudKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7777DB9DC09EF39777E071FD5BC18F /* STCloudKitExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9470159588FC2A80396342C98F01EC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE38A1A405698E4C3FBA8EF2BF9BAE62;
+			remoteInfo = SwiftTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D2098DBBF5EE200B13855DCFD520E74 /* Pods-SkyData-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SkyData-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0F3AABFA1E6B6DD17D39A55C6962C6ED /* SwiftTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-umbrella.h"; sourceTree = "<group>"; };
+		271798E7BD7413E4C90D71467F88A36C /* STCoreDataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STCoreDataExtensions.swift; sourceTree = "<group>"; };
+		2C5C76FA3DDF1B85B017A40B04DA28E5 /* SwiftTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-prefix.pch"; sourceTree = "<group>"; };
+		32ECE69F60B7EDDE40B15FD1E0A67FD8 /* Pods-SkyData-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SkyData-acknowledgements.plist"; sourceTree = "<group>"; };
+		3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTools.xcconfig; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		523312026D95391B3DB3720FE472F61B /* Pods_SkyData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55B1188A8AA67A0DB97CB34CD83BA793 /* Pods-SkyData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SkyData-dummy.m"; sourceTree = "<group>"; };
+		58667E8C296B3057A419C015FAED6F0A /* Pods-SkyData-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SkyData-frameworks.sh"; sourceTree = "<group>"; };
+		58BB5813C2BF744876CE8E24E4754B88 /* SwiftTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A7183B530D93499178B3F81B4EA75F4 /* Other.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		6A38AA016D3A0369848E59D277106237 /* Pods-SkyData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SkyData.modulemap"; sourceTree = "<group>"; };
+		76ABD289CF9ECFF168C4E241E36E6F7F /* STDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STDataSet.swift; sourceTree = "<group>"; };
+		86DE98DC8A4F1589F1EB2DBCF305B449 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B0C88F1929194B017A354A87B28A685 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3189B28BBEF474BCB9BACE769B45093 /* SwiftTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftTools.modulemap; sourceTree = "<group>"; };
+		A8D6C6AE8D9DD2BEDD2CC2BB55C7AF14 /* SwiftTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTools-dummy.m"; sourceTree = "<group>"; };
+		AAEE25D5B3C9E6909C861D677EAC87F2 /* STStandardExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STStandardExtensions.swift; sourceTree = "<group>"; };
+		B24C269164FC2A9C90802539D9835956 /* Pods-SkyData-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SkyData-resources.sh"; sourceTree = "<group>"; };
+		B37A57A462172ACC4930AD4F21D7E94E /* STMultiThreadingExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STMultiThreadingExtensions.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BB4BC71DC85551ED0EA12AACFF3D765B /* Pods-SkyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkyData.release.xcconfig"; sourceTree = "<group>"; };
+		DC7777DB9DC09EF39777E071FD5BC18F /* STCloudKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STCloudKitExtensions.swift; sourceTree = "<group>"; };
+		E63D74E07B9FD923D02D70439A41CF13 /* Pods-SkyData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SkyData-umbrella.h"; sourceTree = "<group>"; };
+		F102F818282A0D924C26B4DECC830AF5 /* Pods-SkyData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkyData.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1027AB183587F81F8A1DC6670C2106B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E439CDCBCA7E44DE340376AE369E64B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8396608A184A6063251189EDA029FCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DA33BA4F4A852917804B8C444D906F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03390158B476ABB2AF0824AAB3315056 /* DataSet */ = {
+			isa = PBXGroup;
+			children = (
+				76ABD289CF9ECFF168C4E241E36E6F7F /* STDataSet.swift */,
+			);
+			path = DataSet;
+			sourceTree = "<group>";
+		};
+		203F008072C70A603EF7F3A989CA2048 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B0C88F1929194B017A354A87B28A685 /* Info.plist */,
+				A3189B28BBEF474BCB9BACE769B45093 /* SwiftTools.modulemap */,
+				3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */,
+				A8D6C6AE8D9DD2BEDD2CC2BB55C7AF14 /* SwiftTools-dummy.m */,
+				2C5C76FA3DDF1B85B017A40B04DA28E5 /* SwiftTools-prefix.pch */,
+				0F3AABFA1E6B6DD17D39A55C6962C6ED /* SwiftTools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../SkyData/Pods/Target Support Files/SwiftTools";
+			sourceTree = "<group>";
+		};
+		3037244036D8155FCBB68C2F4D791C53 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				92563B884550956FF1A19A4FC6D854CD /* SwiftTools */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		32898E1AD0B3789D41F750B66EC99631 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6803D756928E9455427BE278CCCB11BF /* Pods-SkyData */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		416E1685A505ADCAE1B765AEC5C21BB2 /* SwiftTools */ = {
+			isa = PBXGroup;
+			children = (
+				03390158B476ABB2AF0824AAB3315056 /* DataSet */,
+				6FEDAFC691AE61325ACFB5612FD895C7 /* Extensions */,
+				48C8057D18DF540D3D339F21221DDE09 /* Misc */,
+			);
+			path = SwiftTools;
+			sourceTree = "<group>";
+		};
+		48C8057D18DF540D3D339F21221DDE09 /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				5A7183B530D93499178B3F81B4EA75F4 /* Other.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		6803D756928E9455427BE278CCCB11BF /* Pods-SkyData */ = {
+			isa = PBXGroup;
+			children = (
+				86DE98DC8A4F1589F1EB2DBCF305B449 /* Info.plist */,
+				6A38AA016D3A0369848E59D277106237 /* Pods-SkyData.modulemap */,
+				0D2098DBBF5EE200B13855DCFD520E74 /* Pods-SkyData-acknowledgements.markdown */,
+				32ECE69F60B7EDDE40B15FD1E0A67FD8 /* Pods-SkyData-acknowledgements.plist */,
+				55B1188A8AA67A0DB97CB34CD83BA793 /* Pods-SkyData-dummy.m */,
+				58667E8C296B3057A419C015FAED6F0A /* Pods-SkyData-frameworks.sh */,
+				B24C269164FC2A9C90802539D9835956 /* Pods-SkyData-resources.sh */,
+				E63D74E07B9FD923D02D70439A41CF13 /* Pods-SkyData-umbrella.h */,
+				F102F818282A0D924C26B4DECC830AF5 /* Pods-SkyData.debug.xcconfig */,
+				BB4BC71DC85551ED0EA12AACFF3D765B /* Pods-SkyData.release.xcconfig */,
+			);
+			name = "Pods-SkyData";
+			path = "Target Support Files/Pods-SkyData";
+			sourceTree = "<group>";
+		};
+		6FEDAFC691AE61325ACFB5612FD895C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC7777DB9DC09EF39777E071FD5BC18F /* STCloudKitExtensions.swift */,
+				271798E7BD7413E4C90D71467F88A36C /* STCoreDataExtensions.swift */,
+				B37A57A462172ACC4930AD4F21D7E94E /* STMultiThreadingExtensions.swift */,
+				AAEE25D5B3C9E6909C861D677EAC87F2 /* STStandardExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				3037244036D8155FCBB68C2F4D791C53 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F5E29643B74688164432730A65E43C77 /* Products */,
+				32898E1AD0B3789D41F750B66EC99631 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92563B884550956FF1A19A4FC6D854CD /* SwiftTools */ = {
+			isa = PBXGroup;
+			children = (
+				203F008072C70A603EF7F3A989CA2048 /* Support Files */,
+				416E1685A505ADCAE1B765AEC5C21BB2 /* SwiftTools */,
+			);
+			name = SwiftTools;
+			path = /Users/developer/Documents/Projects/SwiftTools;
+			sourceTree = "<absolute>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F5E29643B74688164432730A65E43C77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				523312026D95391B3DB3720FE472F61B /* Pods_SkyData.framework */,
+				58BB5813C2BF744876CE8E24E4754B88 /* SwiftTools.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7DF7A69DDF032DBAE48D5D925903CD97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4A9F08A822177E9C4065C3C3E1F954 /* SwiftTools-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DFE439917BE9B7DE3966709FA7E63C3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47644033CDC159426A1C53DF17C65BB4 /* Pods-SkyData-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BE38A1A405698E4C3FBA8EF2BF9BAE62 /* SwiftTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C88E3D3654A86C8E7F1B2F1D1DF7BA40 /* Build configuration list for PBXNativeTarget "SwiftTools" */;
+			buildPhases = (
+				FD709126DA5ACD907D1F8DF4CF9BE30F /* Sources */,
+				1027AB183587F81F8A1DC6670C2106B5 /* Frameworks */,
+				7DF7A69DDF032DBAE48D5D925903CD97 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTools;
+			productName = SwiftTools;
+			productReference = 58BB5813C2BF744876CE8E24E4754B88 /* SwiftTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F613F5A76327EEA58D7EECB40F6E36C0 /* Pods-SkyData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD59843A044245E7895AEB4A6CA1B83E /* Build configuration list for PBXNativeTarget "Pods-SkyData" */;
+			buildPhases = (
+				3CD7A831E555E07773B5CF14E57ED8D3 /* Sources */,
+				8396608A184A6063251189EDA029FCFD /* Frameworks */,
+				8DFE439917BE9B7DE3966709FA7E63C3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBECED89C6C06AAA94A18799E1F6D72A /* PBXTargetDependency */,
+			);
+			name = "Pods-SkyData";
+			productName = "Pods-SkyData";
+			productReference = 523312026D95391B3DB3720FE472F61B /* Pods_SkyData.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = F5E29643B74688164432730A65E43C77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F613F5A76327EEA58D7EECB40F6E36C0 /* Pods-SkyData */,
+				BE38A1A405698E4C3FBA8EF2BF9BAE62 /* SwiftTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3CD7A831E555E07773B5CF14E57ED8D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B109981578903A4EDE6C28F9F7E0881 /* Pods-SkyData-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD709126DA5ACD907D1F8DF4CF9BE30F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CDC74C461CE426481119D0346776B75C /* Other.swift in Sources */,
+				F588D2DCB3CFA04963266EBD6FD4DBC5 /* STCloudKitExtensions.swift in Sources */,
+				5A8F7AF8EB0D20954452048E6E42C586 /* STCoreDataExtensions.swift in Sources */,
+				B64CE7338C168D85531FF84B0A36035A /* STDataSet.swift in Sources */,
+				6F09C06C9FECBDF4F66DA6DCBFF16881 /* STMultiThreadingExtensions.swift in Sources */,
+				852CB6A39E0AD12D280929C51853EFDA /* STStandardExtensions.swift in Sources */,
+				6A812FE8FBE84446201FE40DF1F67FC1 /* SwiftTools-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBECED89C6C06AAA94A18799E1F6D72A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftTools;
+			target = BE38A1A405698E4C3FBA8EF2BF9BAE62 /* SwiftTools */;
+			targetProxy = 9470159588FC2A80396342C98F01EC1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		197D2499BB679CEC8F5D84934A4541DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTools/SwiftTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftTools/SwiftTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5BA7366AE0DF8B18335A49D4706CC9AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F102F818282A0D924C26B4DECC830AF5 /* Pods-SkyData.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SkyData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkyData/Pods-SkyData.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SkyData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		71CA9FB3993AAD7A92E77032960A6226 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftTools/SwiftTools-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftTools/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftTools/SwiftTools.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftTools;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8A947A09B3BDDECFAC2FFF61088C0C5D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB4BC71DC85551ED0EA12AACFF3D765B /* Pods-SkyData.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SkyData/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SkyData/Pods-SkyData.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_SkyData;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9EB645C612834738B99727720210C23E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E39CD1E764776175CB82EEC82A6C9948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB645C612834738B99727720210C23E /* Debug */,
+				E39CD1E764776175CB82EEC82A6C9948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD59843A044245E7895AEB4A6CA1B83E /* Build configuration list for PBXNativeTarget "Pods-SkyData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA7366AE0DF8B18335A49D4706CC9AA /* Debug */,
+				8A947A09B3BDDECFAC2FFF61088C0C5D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C88E3D3654A86C8E7F1B2F1D1DF7BA40 /* Build configuration list for PBXNativeTarget "SwiftTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71CA9FB3993AAD7A92E77032960A6226 /* Debug */,
+				197D2499BB679CEC8F5D84934A4541DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

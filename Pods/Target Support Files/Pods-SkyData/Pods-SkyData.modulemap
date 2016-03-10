@@ -1,0 +1,6 @@
+framework module Pods_SkyData {
+  umbrella header "Pods-SkyData-umbrella.h"
+
+  export *
+  module * { export * }
+}
