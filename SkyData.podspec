@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "skydata"
+  s.name         = "SkyData"
   s.version      = "0.1"
   s.homepage     = 'https://github.com/jwitcig/SkyData'
   s.summary      = "CloudKit-CoreData sync framework."
