@@ -8,17 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		0B109981578903A4EDE6C28F9F7E0881 /* Pods-SkyData-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 55B1188A8AA67A0DB97CB34CD83BA793 /* Pods-SkyData-dummy.m */; };
+		16DB7DD0B8D362780BAFD2C6C3C7AFAA /* SwiftTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C2D74EF7AEBE14D3C41B3B8588F4DC /* SwiftTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1E439CDCBCA7E44DE340376AE369E64B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		2E63211A7B1D83474E370932FBB1DAAD /* SwiftTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AF1BB05EFE6E813255EA37417963701 /* SwiftTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47644033CDC159426A1C53DF17C65BB4 /* Pods-SkyData-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E63D74E07B9FD923D02D70439A41CF13 /* Pods-SkyData-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5A8F7AF8EB0D20954452048E6E42C586 /* STCoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271798E7BD7413E4C90D71467F88A36C /* STCoreDataExtensions.swift */; };
-		5B4A9F08A822177E9C4065C3C3E1F954 /* SwiftTools-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F3AABFA1E6B6DD17D39A55C6962C6ED /* SwiftTools-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6A812FE8FBE84446201FE40DF1F67FC1 /* SwiftTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D6C6AE8D9DD2BEDD2CC2BB55C7AF14 /* SwiftTools-dummy.m */; };
-		6F09C06C9FECBDF4F66DA6DCBFF16881 /* STMultiThreadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37A57A462172ACC4930AD4F21D7E94E /* STMultiThreadingExtensions.swift */; };
+		59973CF18B673C74DE0A44EC5EFF03F4 /* STCloudKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7B75260324D3DEC767448B497B962 /* STCloudKitExtensions.swift */; };
+		667BCA0EEFDED3A8DE06E395D8657649 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BAEC54F3FC9F16D920844292D09CE8D /* Other.swift */; };
+		7060FF7A24A89EC1EF57BC951074079A /* STCoreDataExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7913DAD30F6FDC7CC228A34C8BC78FD /* STCoreDataExtensions.swift */; };
 		81DA33BA4F4A852917804B8C444D906F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		852CB6A39E0AD12D280929C51853EFDA /* STStandardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAEE25D5B3C9E6909C861D677EAC87F2 /* STStandardExtensions.swift */; };
-		B64CE7338C168D85531FF84B0A36035A /* STDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76ABD289CF9ECFF168C4E241E36E6F7F /* STDataSet.swift */; };
-		CDC74C461CE426481119D0346776B75C /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7183B530D93499178B3F81B4EA75F4 /* Other.swift */; };
-		F588D2DCB3CFA04963266EBD6FD4DBC5 /* STCloudKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7777DB9DC09EF39777E071FD5BC18F /* STCloudKitExtensions.swift */; };
+		8CAED8819CD401DED1D73DDFFC2CF077 /* STStandardExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6095E174C31418B0D483524B21C90CF4 /* STStandardExtensions.swift */; };
+		B1E28029838C3ADC72F9A1A4124E9547 /* STMultiThreadingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17D460E75796B809C8B7096F6ACEBFD /* STMultiThreadingExtensions.swift */; };
+		DD9D4E4D10FE94782607EC355908FB68 /* SwiftTools-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A7E26354067535C5423B6C1D5762B13 /* SwiftTools-dummy.m */; };
+		F9ABD1020E22D041CBF24F9F4AC73B2D /* STDataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 297E965D9689A0600344855FD3F17DFC /* STDataSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,30 +33,31 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C5569C02E7CA8229A7BEB1FAE7E0250 /* SwiftTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftTools.modulemap; sourceTree = "<group>"; };
 		0D2098DBBF5EE200B13855DCFD520E74 /* Pods-SkyData-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SkyData-acknowledgements.markdown"; sourceTree = "<group>"; };
-		0F3AABFA1E6B6DD17D39A55C6962C6ED /* SwiftTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-umbrella.h"; sourceTree = "<group>"; };
-		271798E7BD7413E4C90D71467F88A36C /* STCoreDataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STCoreDataExtensions.swift; sourceTree = "<group>"; };
-		2C5C76FA3DDF1B85B017A40B04DA28E5 /* SwiftTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-prefix.pch"; sourceTree = "<group>"; };
+		297E965D9689A0600344855FD3F17DFC /* STDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STDataSet.swift; path = SwiftTools/DataSet/STDataSet.swift; sourceTree = "<group>"; };
 		32ECE69F60B7EDDE40B15FD1E0A67FD8 /* Pods-SkyData-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SkyData-acknowledgements.plist"; sourceTree = "<group>"; };
-		3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTools.xcconfig; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		523312026D95391B3DB3720FE472F61B /* Pods_SkyData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54C2D74EF7AEBE14D3C41B3B8588F4DC /* SwiftTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwiftTools.h; path = SwiftTools/SwiftTools.h; sourceTree = "<group>"; };
 		55B1188A8AA67A0DB97CB34CD83BA793 /* Pods-SkyData-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SkyData-dummy.m"; sourceTree = "<group>"; };
 		58667E8C296B3057A419C015FAED6F0A /* Pods-SkyData-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SkyData-frameworks.sh"; sourceTree = "<group>"; };
 		58BB5813C2BF744876CE8E24E4754B88 /* SwiftTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A7183B530D93499178B3F81B4EA75F4 /* Other.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Other.swift; sourceTree = "<group>"; };
+		5A7E26354067535C5423B6C1D5762B13 /* SwiftTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTools-dummy.m"; sourceTree = "<group>"; };
+		5BAEC54F3FC9F16D920844292D09CE8D /* Other.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Other.swift; path = SwiftTools/Misc/Other.swift; sourceTree = "<group>"; };
+		6095E174C31418B0D483524B21C90CF4 /* STStandardExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STStandardExtensions.swift; path = SwiftTools/Extensions/STStandardExtensions.swift; sourceTree = "<group>"; };
 		6A38AA016D3A0369848E59D277106237 /* Pods-SkyData.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SkyData.modulemap"; sourceTree = "<group>"; };
-		76ABD289CF9ECFF168C4E241E36E6F7F /* STDataSet.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STDataSet.swift; sourceTree = "<group>"; };
 		86DE98DC8A4F1589F1EB2DBCF305B449 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B0C88F1929194B017A354A87B28A685 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A3189B28BBEF474BCB9BACE769B45093 /* SwiftTools.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftTools.modulemap; sourceTree = "<group>"; };
-		A8D6C6AE8D9DD2BEDD2CC2BB55C7AF14 /* SwiftTools-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftTools-dummy.m"; sourceTree = "<group>"; };
-		AAEE25D5B3C9E6909C861D677EAC87F2 /* STStandardExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STStandardExtensions.swift; sourceTree = "<group>"; };
+		8AF1BB05EFE6E813255EA37417963701 /* SwiftTools-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-umbrella.h"; sourceTree = "<group>"; };
 		B24C269164FC2A9C90802539D9835956 /* Pods-SkyData-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SkyData-resources.sh"; sourceTree = "<group>"; };
-		B37A57A462172ACC4930AD4F21D7E94E /* STMultiThreadingExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STMultiThreadingExtensions.swift; sourceTree = "<group>"; };
+		B6E9ECEE80283FFCC2C9D04AADCF86A6 /* SwiftTools.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftTools.xcconfig; sourceTree = "<group>"; };
+		BA0565B2508CD49973A65A63D5FEF103 /* SwiftTools-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftTools-prefix.pch"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB4BC71DC85551ED0EA12AACFF3D765B /* Pods-SkyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkyData.release.xcconfig"; sourceTree = "<group>"; };
-		DC7777DB9DC09EF39777E071FD5BC18F /* STCloudKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = STCloudKitExtensions.swift; sourceTree = "<group>"; };
+		C17D460E75796B809C8B7096F6ACEBFD /* STMultiThreadingExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STMultiThreadingExtensions.swift; path = SwiftTools/Extensions/STMultiThreadingExtensions.swift; sourceTree = "<group>"; };
+		C9B7B75260324D3DEC767448B497B962 /* STCloudKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STCloudKitExtensions.swift; path = SwiftTools/Extensions/STCloudKitExtensions.swift; sourceTree = "<group>"; };
+		D7913DAD30F6FDC7CC228A34C8BC78FD /* STCoreDataExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = STCoreDataExtensions.swift; path = SwiftTools/Extensions/STCoreDataExtensions.swift; sourceTree = "<group>"; };
+		E52DFE25E432FB9203E3164C559BAE63 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E63D74E07B9FD923D02D70439A41CF13 /* Pods-SkyData-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SkyData-umbrella.h"; sourceTree = "<group>"; };
 		F102F818282A0D924C26B4DECC830AF5 /* Pods-SkyData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SkyData.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,60 +82,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		03390158B476ABB2AF0824AAB3315056 /* DataSet */ = {
-			isa = PBXGroup;
-			children = (
-				76ABD289CF9ECFF168C4E241E36E6F7F /* STDataSet.swift */,
-			);
-			path = DataSet;
-			sourceTree = "<group>";
-		};
-		203F008072C70A603EF7F3A989CA2048 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B0C88F1929194B017A354A87B28A685 /* Info.plist */,
-				A3189B28BBEF474BCB9BACE769B45093 /* SwiftTools.modulemap */,
-				3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */,
-				A8D6C6AE8D9DD2BEDD2CC2BB55C7AF14 /* SwiftTools-dummy.m */,
-				2C5C76FA3DDF1B85B017A40B04DA28E5 /* SwiftTools-prefix.pch */,
-				0F3AABFA1E6B6DD17D39A55C6962C6ED /* SwiftTools-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../SkyData/Pods/Target Support Files/SwiftTools";
-			sourceTree = "<group>";
-		};
-		3037244036D8155FCBB68C2F4D791C53 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				92563B884550956FF1A19A4FC6D854CD /* SwiftTools */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		32898E1AD0B3789D41F750B66EC99631 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				6803D756928E9455427BE278CCCB11BF /* Pods-SkyData */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		416E1685A505ADCAE1B765AEC5C21BB2 /* SwiftTools */ = {
-			isa = PBXGroup;
-			children = (
-				03390158B476ABB2AF0824AAB3315056 /* DataSet */,
-				6FEDAFC691AE61325ACFB5612FD895C7 /* Extensions */,
-				48C8057D18DF540D3D339F21221DDE09 /* Misc */,
-			);
-			path = SwiftTools;
-			sourceTree = "<group>";
-		};
-		48C8057D18DF540D3D339F21221DDE09 /* Misc */ = {
-			isa = PBXGroup;
-			children = (
-				5A7183B530D93499178B3F81B4EA75F4 /* Other.swift */,
-			);
-			path = Misc;
 			sourceTree = "<group>";
 		};
 		6803D756928E9455427BE278CCCB11BF /* Pods-SkyData */ = {
@@ -154,37 +108,31 @@
 			path = "Target Support Files/Pods-SkyData";
 			sourceTree = "<group>";
 		};
-		6FEDAFC691AE61325ACFB5612FD895C7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				DC7777DB9DC09EF39777E071FD5BC18F /* STCloudKitExtensions.swift */,
-				271798E7BD7413E4C90D71467F88A36C /* STCoreDataExtensions.swift */,
-				B37A57A462172ACC4930AD4F21D7E94E /* STMultiThreadingExtensions.swift */,
-				AAEE25D5B3C9E6909C861D677EAC87F2 /* STStandardExtensions.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				3037244036D8155FCBB68C2F4D791C53 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D79CA1A4AEE6B09723D95BF58D03270D /* Pods */,
 				F5E29643B74688164432730A65E43C77 /* Products */,
 				32898E1AD0B3789D41F750B66EC99631 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		92563B884550956FF1A19A4FC6D854CD /* SwiftTools */ = {
+		955E9A245695459F3FDB55012E5E30F3 /* SwiftTools */ = {
 			isa = PBXGroup;
 			children = (
-				203F008072C70A603EF7F3A989CA2048 /* Support Files */,
-				416E1685A505ADCAE1B765AEC5C21BB2 /* SwiftTools */,
+				5BAEC54F3FC9F16D920844292D09CE8D /* Other.swift */,
+				C9B7B75260324D3DEC767448B497B962 /* STCloudKitExtensions.swift */,
+				D7913DAD30F6FDC7CC228A34C8BC78FD /* STCoreDataExtensions.swift */,
+				297E965D9689A0600344855FD3F17DFC /* STDataSet.swift */,
+				C17D460E75796B809C8B7096F6ACEBFD /* STMultiThreadingExtensions.swift */,
+				6095E174C31418B0D483524B21C90CF4 /* STStandardExtensions.swift */,
+				54C2D74EF7AEBE14D3C41B3B8588F4DC /* SwiftTools.h */,
+				FE0608DF18174F0596937C17DC54F38D /* Support Files */,
 			);
-			name = SwiftTools;
-			path = /Users/developer/Documents/Projects/SwiftTools;
-			sourceTree = "<absolute>";
+			path = SwiftTools;
+			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
@@ -202,6 +150,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		D79CA1A4AEE6B09723D95BF58D03270D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				955E9A245695459F3FDB55012E5E30F3 /* SwiftTools */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F5E29643B74688164432730A65E43C77 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,14 +167,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FE0608DF18174F0596937C17DC54F38D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E52DFE25E432FB9203E3164C559BAE63 /* Info.plist */,
+				0C5569C02E7CA8229A7BEB1FAE7E0250 /* SwiftTools.modulemap */,
+				B6E9ECEE80283FFCC2C9D04AADCF86A6 /* SwiftTools.xcconfig */,
+				5A7E26354067535C5423B6C1D5762B13 /* SwiftTools-dummy.m */,
+				BA0565B2508CD49973A65A63D5FEF103 /* SwiftTools-prefix.pch */,
+				8AF1BB05EFE6E813255EA37417963701 /* SwiftTools-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftTools";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7DF7A69DDF032DBAE48D5D925903CD97 /* Headers */ = {
+		30E97396E7301C9885F91B3B9E88623A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B4A9F08A822177E9C4065C3C3E1F954 /* SwiftTools-umbrella.h in Headers */,
+				2E63211A7B1D83474E370932FBB1DAAD /* SwiftTools-umbrella.h in Headers */,
+				16DB7DD0B8D362780BAFD2C6C3C7AFAA /* SwiftTools.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +208,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C88E3D3654A86C8E7F1B2F1D1DF7BA40 /* Build configuration list for PBXNativeTarget "SwiftTools" */;
 			buildPhases = (
-				FD709126DA5ACD907D1F8DF4CF9BE30F /* Sources */,
+				062AB2CF01FC8E2F3D0E29AE10F14522 /* Sources */,
 				1027AB183587F81F8A1DC6670C2106B5 /* Frameworks */,
-				7DF7A69DDF032DBAE48D5D925903CD97 /* Headers */,
+				30E97396E7301C9885F91B3B9E88623A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -296,25 +267,25 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		062AB2CF01FC8E2F3D0E29AE10F14522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667BCA0EEFDED3A8DE06E395D8657649 /* Other.swift in Sources */,
+				59973CF18B673C74DE0A44EC5EFF03F4 /* STCloudKitExtensions.swift in Sources */,
+				7060FF7A24A89EC1EF57BC951074079A /* STCoreDataExtensions.swift in Sources */,
+				F9ABD1020E22D041CBF24F9F4AC73B2D /* STDataSet.swift in Sources */,
+				B1E28029838C3ADC72F9A1A4124E9547 /* STMultiThreadingExtensions.swift in Sources */,
+				8CAED8819CD401DED1D73DDFFC2CF077 /* STStandardExtensions.swift in Sources */,
+				DD9D4E4D10FE94782607EC355908FB68 /* SwiftTools-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CD7A831E555E07773B5CF14E57ED8D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0B109981578903A4EDE6C28F9F7E0881 /* Pods-SkyData-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD709126DA5ACD907D1F8DF4CF9BE30F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CDC74C461CE426481119D0346776B75C /* Other.swift in Sources */,
-				F588D2DCB3CFA04963266EBD6FD4DBC5 /* STCloudKitExtensions.swift in Sources */,
-				5A8F7AF8EB0D20954452048E6E42C586 /* STCoreDataExtensions.swift in Sources */,
-				B64CE7338C168D85531FF84B0A36035A /* STDataSet.swift in Sources */,
-				6F09C06C9FECBDF4F66DA6DCBFF16881 /* STMultiThreadingExtensions.swift in Sources */,
-				852CB6A39E0AD12D280929C51853EFDA /* STStandardExtensions.swift in Sources */,
-				6A812FE8FBE84446201FE40DF1F67FC1 /* SwiftTools-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +303,7 @@
 /* Begin XCBuildConfiguration section */
 		197D2499BB679CEC8F5D84934A4541DD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */;
+			baseConfigurationReference = B6E9ECEE80283FFCC2C9D04AADCF86A6 /* SwiftTools.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -390,7 +361,7 @@
 		};
 		71CA9FB3993AAD7A92E77032960A6226 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CEA599160327D4A08CB51A5505D3919 /* SwiftTools.xcconfig */;
+			baseConfigurationReference = B6E9ECEE80283FFCC2C9D04AADCF86A6 /* SwiftTools.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

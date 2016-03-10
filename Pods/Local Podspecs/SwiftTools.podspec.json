@@ -19,5 +19,5 @@
     "git": "https://github.com/jwitcig/SwiftTools.git",
     "tag": "1.0.4"
   },
-  "source_files": "SwiftTools/**/*.{swift}"
+  "source_files": "SwiftTools/**/*.{swift,h}"
 }

@@ -186,7 +186,6 @@
 				8BCC27981C8E36F6005F25EE /* Frameworks */,
 				8BCC27991C8E36F6005F25EE /* Headers */,
 				8BCC279A1C8E36F6005F25EE /* Resources */,
-				8B7C4ECA1C902A1300E21773 /* ShellScript */,
 				5E6B5B5256748EA90E2E4B31 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -266,20 +265,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyData/Pods-SkyData-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		8B7C4ECA1C902A1300E21773 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftTools.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		8B7C4ECB1C902A4700E21773 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -474,7 +459,7 @@
 				);
 				INFOPLIST_FILE = SkyData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.SkyData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,7 +481,7 @@
 				);
 				INFOPLIST_FILE = SkyData/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jwitapps.SkyData;
 				PRODUCT_NAME = "$(TARGET_NAME)";
