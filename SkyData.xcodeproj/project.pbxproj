@@ -165,7 +165,6 @@
 				8B7C4EB91C90280A00E21773 /* Sources */,
 				8B7C4EBA1C90280A00E21773 /* Frameworks */,
 				8B7C4EBB1C90280A00E21773 /* Resources */,
-				8B7C4ECB1C902A4700E21773 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -265,20 +264,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyData/Pods-SkyData-resources.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		8B7C4ECB1C902A4700E21773 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SwiftTools.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
 		};
 		BE4E585390917378D7938552 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
