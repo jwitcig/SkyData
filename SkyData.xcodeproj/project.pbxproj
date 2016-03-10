@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F5BA1B34475AFF78E000F7C /* Pods_SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F6789D7E69FA844675A29B4 /* Pods_SkyData.framework */; };
 		8B4942771C8EBA7A007F273A /* SDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49426D1C8EBA7A007F273A /* SDSession.swift */; };
 		8B7C4EC21C90280A00E21773 /* SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC279C1C8E36F6005F25EE /* SkyData.framework */; };
 		8B7C4EC81C9028E500E21773 /* SkyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4EBF1C90280A00E21773 /* SkyDataTests.swift */; };
@@ -30,8 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F6789D7E69FA844675A29B4 /* Pods_SkyData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FA932598B14926131ED2023 /* Pods-SkyData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SkyData/Pods-SkyData.debug.xcconfig"; sourceTree = "<group>"; };
 		8B49425D1C8EB11C007F273A /* SwiftTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTools.framework; path = Carthage/Build/iOS/SwiftTools.framework; sourceTree = "<group>"; };
 		8B49426D1C8EBA7A007F273A /* SDSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDSession.swift; path = General/SDSession.swift; sourceTree = "<group>"; };
 		8B7C4EBD1C90280A00E21773 /* SkyDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +40,6 @@
 		8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDServerStoreConfig.swift; sourceTree = "<group>"; };
 		8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFetchUserIDOperation.swift; sourceTree = "<group>"; };
 		8BE9D0F01C901A2000550054 /* SDDelayOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDDelayOperation.swift; sourceTree = "<group>"; };
-		C75A42BA7E2C1B64CEE6B718 /* Pods-SkyData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyData.release.xcconfig"; path = "Pods/Target Support Files/Pods-SkyData/Pods-SkyData.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,28 +57,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				8BE9D0A41C8FD58000550054 /* SwiftTools.framework in Frameworks */,
-				1F5BA1B34475AFF78E000F7C /* Pods_SkyData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4823F3BFAF90D74DF36DEA01 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1FA932598B14926131ED2023 /* Pods-SkyData.debug.xcconfig */,
-				C75A42BA7E2C1B64CEE6B718 /* Pods-SkyData.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		8B49425F1C8EB127007F273A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				8B49425D1C8EB11C007F273A /* SwiftTools.framework */,
 				8BCC279D1C8E36F6005F25EE /* Products */,
-				0F6789D7E69FA844675A29B4 /* Pods_SkyData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -120,7 +105,6 @@
 				8BCC279E1C8E36F6005F25EE /* SkyData */,
 				8B7C4EBE1C90280A00E21773 /* SkyDataTests */,
 				8B49425F1C8EB127007F273A /* Frameworks */,
-				4823F3BFAF90D74DF36DEA01 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -180,12 +164,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8BCC27B01C8E36F6005F25EE /* Build configuration list for PBXNativeTarget "SkyData" */;
 			buildPhases = (
-				BE4E585390917378D7938552 /* Check Pods Manifest.lock */,
 				8BCC27971C8E36F6005F25EE /* Sources */,
 				8BCC27981C8E36F6005F25EE /* Frameworks */,
 				8BCC27991C8E36F6005F25EE /* Headers */,
 				8BCC279A1C8E36F6005F25EE /* Resources */,
-				5E6B5B5256748EA90E2E4B31 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -248,39 +230,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		5E6B5B5256748EA90E2E4B31 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SkyData/Pods-SkyData-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BE4E585390917378D7938552 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8B7C4EB91C90280A00E21773 /* Sources */ = {
@@ -432,7 +381,6 @@
 		};
 		8BCC27B11C8E36F6005F25EE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FA932598B14926131ED2023 /* Pods-SkyData.debug.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -454,7 +402,6 @@
 		};
 		8BCC27B21C8E36F6005F25EE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C75A42BA7E2C1B64CEE6B718 /* Pods-SkyData.release.xcconfig */;
 			buildSettings = {
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
