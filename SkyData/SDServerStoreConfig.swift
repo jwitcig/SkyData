@@ -40,12 +40,13 @@ class SDServerStoreConfig {
             subscription.notificationInfo = CKNotificationInfo()
             subscription.notificationInfo?.alertBody = "RecordEvent"
             subscription.notificationInfo?.shouldSendContentAvailable = true
+            subscription.notificationInfo?.shouldBadge = false
             
             return subscription
         }
         
         saveSubscriptionsOperation.modifySubscriptionsCompletionBlock = { subscriptions, subscriptionIDs, error in
-            print("[SkyData] Completed SDServerStoreSetupOperation")
+            print("[SkyData] Completed SDServerStoreSetupOperation: \(subscriptionIDs) : \(error)")
         }
         
         saveSubscriptionsOperation.subscriptionsToSave = subscriptions

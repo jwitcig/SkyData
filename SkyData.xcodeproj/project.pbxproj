@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1707081C92A59F00763E00 /* SDFetchNotificationsOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1707071C92A59F00763E00 /* SDFetchNotificationsOperation.swift */; };
 		8B4942771C8EBA7A007F273A /* SDSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B49426D1C8EBA7A007F273A /* SDSession.swift */; };
 		8B7C4EC21C90280A00E21773 /* SkyData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BCC279C1C8E36F6005F25EE /* SkyData.framework */; };
 		8B7C4EC81C9028E500E21773 /* SkyDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B7C4EBF1C90280A00E21773 /* SkyDataTests.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8B1707071C92A59F00763E00 /* SDFetchNotificationsOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDFetchNotificationsOperation.swift; sourceTree = "<group>"; };
 		8B49425D1C8EB11C007F273A /* SwiftTools.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftTools.framework; path = Carthage/Build/iOS/SwiftTools.framework; sourceTree = "<group>"; };
 		8B49426D1C8EBA7A007F273A /* SDSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SDSession.swift; path = General/SDSession.swift; sourceTree = "<group>"; };
 		8B7C4EBD1C90280A00E21773 /* SkyDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkyDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				8BE9D09D1C8FC2E200550054 /* SDServerStoreConfig.swift */,
 				8BE9D09F1C8FD1BB00550054 /* SDFetchUserIDOperation.swift */,
 				8BE9D0F01C901A2000550054 /* SDDelayOperation.swift */,
+				8B1707071C92A59F00763E00 /* SDFetchNotificationsOperation.swift */,
 			);
 			name = Operations;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B4942771C8EBA7A007F273A /* SDSession.swift in Sources */,
+				8B1707081C92A59F00763E00 /* SDFetchNotificationsOperation.swift in Sources */,
 				8BE9D09E1C8FC2E200550054 /* SDServerStoreConfig.swift in Sources */,
 				8BE9D0A01C8FD1BB00550054 /* SDFetchUserIDOperation.swift in Sources */,
 				8BE9D0F11C901A2000550054 /* SDDelayOperation.swift in Sources */,

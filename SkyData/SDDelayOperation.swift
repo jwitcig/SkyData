@@ -38,14 +38,14 @@ class SDDelayOperation: NSOperation {
     }
     
     override func start() {
-        executing = true
-        
         print("[SkyData] Started SDDelayOperation")
     
         startTimer()
     }
     
-    func startTimer() {
+    private func startTimer() {
+        executing = true
+
         runOnMainThread {
             self.performSelector("completed", withObject: nil, afterDelay: self.delayDuration)
         }
@@ -62,12 +62,8 @@ class SDDelayOperation: NSOperation {
     }
     
     override func cancel() {
+        executing = false
         stopTimer()
-    }
-    
-    func cancelAndRestart() {
-        cancel()
-        startTimer()
     }
     
     func completed() {
