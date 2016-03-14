@@ -33,6 +33,8 @@ class SDFetchNotificationsOperation: NSOperation {
         }
     }
     
+    var fetchUnreadNotificationsCompletionBlock: (([CKNotification])->())?
+    
     // Passes fetched notifications all the way to the initial grandparent fetch operation
     var notifications = [CKNotification]() {
         willSet {
@@ -40,6 +42,23 @@ class SDFetchNotificationsOperation: NSOperation {
             parentFetchOperation?.notifications.appendContentsOf(newItems)
         }
     }
+    
+    /*
+        fetch '0'
+            notifications = [1, 2]
+            
+            subfetch '1'
+                notifications = [3, 4]
+                
+                notifications {
+                    didSet {
+                        superOperation.notifications += notifications
+                    }
+                }
+                
+                subfetch '2'
+                    notifications = [5, 6]
+    */
     
     var container: CKContainer
     var previousServerChangeToken: CKServerChangeToken?
@@ -50,7 +69,6 @@ class SDFetchNotificationsOperation: NSOperation {
     
     // Holds reference to the queue running this operation to use for internally created operations
     var queue: NSOperationQueue
-
     
     init(container: CKContainer, serverChangeToken previousServerChangeToken: CKServerChangeToken?, queue: NSOperationQueue) {
         self.container = container
@@ -97,29 +115,10 @@ class SDFetchNotificationsOperation: NSOperation {
         queue.addOperation(fetchUnreadNotificationsOperation)
     }
     
-    
-    /*
-        fetch '0'
-            notifications = [1, 2]
-    
-            subfetch '1'
-                notifications = [3, 4]
-        
-                notifications {
-                    didSet {
-                        superOperation.notifications += notifications
-                    }
-                }
-    
-                subfetch '2'
-                    notifications = [5, 6]
-    */
-    
-    
-    
-    
     func completed() {
         print("[SkyData] Ended SDFetchNotificationsOperation")
+        
+        fetchUnreadNotificationsCompletionBlock?(notifications)
         
         self.executing = false
         self.finished = true
