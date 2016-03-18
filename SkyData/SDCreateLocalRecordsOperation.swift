@@ -64,6 +64,8 @@ class SDCreateLocalRecordsOperation: NSOperation {
     }
     
     override func start() {
+        if cancelled { self.completed(); return }
+
         print("[SkyData] Started SDCreateLocalRecordsOperation")
         executing = true
         
@@ -71,12 +73,13 @@ class SDCreateLocalRecordsOperation: NSOperation {
     }
     
     override func main() {
-        guard !cancelled else { return }
+        if cancelled { self.completed(); return }
         
         let context = NSManagedObjectContext(parentContext: self.parentManagedObjectContext)
         context.retainsRegisteredObjects = true
         context.performBlock {
-            
+            if self.cancelled { self.completed(); return }
+
             var managedObjects = [NSManagedObject]()
             for (recordType, recordNames) in self.recordTypesAndNames {
                 recordNames.forEach {

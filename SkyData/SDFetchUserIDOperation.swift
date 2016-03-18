@@ -40,6 +40,7 @@ class SDFetchUserIDOperation: NSOperation {
     }
     
     override func start() {
+        if cancelled { self.completed(); return }
         executing = true
         
         print("[SkyData] Started SDFetchUserIDOperation")
@@ -56,9 +57,7 @@ class SDFetchUserIDOperation: NSOperation {
     }
     
     override func main() {
-        if cancelled {
-            return
-        }
+        if cancelled { self.completed(); return }
     }
     
     func completed() {

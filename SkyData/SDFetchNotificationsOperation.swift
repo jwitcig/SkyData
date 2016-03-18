@@ -84,6 +84,8 @@ class SDFetchNotificationsOperation: NSOperation {
     }
     
     override func start() {
+        if cancelled { self.completed(); return }
+
         print("[SkyData] Started SDFetchNotificationsOperation")
         executing = true
         
@@ -91,17 +93,21 @@ class SDFetchNotificationsOperation: NSOperation {
     }
     
     override func main() {
-        guard !cancelled else { return }
-
+        if cancelled { self.completed(); return }
+        
         let fetchUnreadNotificationsOperation = CKFetchNotificationChangesOperation(previousServerChangeToken: previousServerChangeToken)
         fetchUnreadNotificationsOperation.container = container
         
         fetchUnreadNotificationsOperation.notificationChangedBlock = {
+            if self.cancelled { self.completed(); return }
+
             self.notifications.append($0)
+            self.cancel()
         }
         
         fetchUnreadNotificationsOperation.fetchNotificationChangesCompletionBlock = { newServerChangeToken, error in
-            
+            if self.cancelled { self.completed(); return }
+
             self.newServerChangeToken = newServerChangeToken
 
             guard !fetchUnreadNotificationsOperation.moreComing else {
@@ -115,7 +121,7 @@ class SDFetchNotificationsOperation: NSOperation {
         queue.addOperation(fetchUnreadNotificationsOperation)
     }
     
-    func completed() {
+    func completed() {        
         print("[SkyData] Ended SDFetchNotificationsOperation")
         
         fetchUnreadNotificationsCompletionBlock?(notifications)

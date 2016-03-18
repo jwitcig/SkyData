@@ -38,12 +38,16 @@ class SDDelayOperation: NSOperation {
     }
     
     override func start() {
+        if cancelled { self.completed(); return }
+
         print("[SkyData] Started SDDelayOperation")
     
         startTimer()
     }
     
     private func startTimer() {
+        if cancelled { self.completed(); return }
+
         executing = true
 
         runOnMainThread {

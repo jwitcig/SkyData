@@ -117,8 +117,13 @@ public class SDSession {
         var uniqueDeleteRecordIDs: Set<CKRecordID> {
             return deleteNotifications.map { $0.recordID! }.set
         }
+        fetchUnreadNotificationsOperation.completionBlock = {
+            print("nsoperation general")
+        }
         
         fetchUnreadNotificationsOperation.fetchUnreadNotificationsCompletionBlock = { fetchedNotifications in
+            
+            print("cloudkit specific")
 
             print("fetched notifications: \(fetchedNotifications.count)")
 

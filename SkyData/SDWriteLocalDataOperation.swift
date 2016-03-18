@@ -64,6 +64,8 @@ class SDWriteLocalDataOperation: NSOperation {
     }
     
     override func start() {
+        if cancelled { self.completed(); return }
+
         print("[SkyData] Started SDWriteLocalDataOperation")
         executing = true
         
@@ -71,7 +73,7 @@ class SDWriteLocalDataOperation: NSOperation {
     }
     
     override func main() {
-        guard !cancelled else { return }
+        if cancelled { self.completed(); return }
         
         let writeCompletionOperation = NSBlockOperation {
             self.completed()
@@ -86,13 +88,16 @@ class SDWriteLocalDataOperation: NSOperation {
         
         let recordTypes = allCloudRecords.map { $0.recordType }.unique
         recordTypes.forEach { recordType in
-            
+            if cancelled { self.completed(); return }
+
             let relevantCloudRecords = allCloudRecords.filter { $0.recordType == recordType }
            
             let fetchRequest = NSFetchRequest(entityName: recordType)
             fetchRequest.predicate = NSPredicate(key: "self", comparator: .In, value: allMangagedObjectIDs)
             
             let writeOperation = NSBlockOperation {
+                if self.cancelled { self.completed(); return }
+
                 context.performBlockAndWait {
                     var fetchedManagedObjects = [NSManagedObject]()
                     
@@ -130,6 +135,11 @@ class SDWriteLocalDataOperation: NSOperation {
             writeOperations.append(writeOperation)
         }
         queue.addOperations(writeOperations + [writeCompletionOperation], waitUntilFinished: false)
+    }
+    
+    func shouldOverwriteLocalData(localRecord localRecord: NSManagedObject, cloudRecord: CKRecord) -> Bool {
+        
+        let localModifiedDate = localRecord.la
     }
     
     func completed() {

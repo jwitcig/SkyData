@@ -63,6 +63,8 @@ class SDFetchLocalRecordsOperation: NSOperation {
     }
     
     override func start() {
+        if cancelled { self.completed(); return }
+
         print("[SkyData] Started SDFetchLocalRecordsOperation")
         executing = true
         
@@ -70,7 +72,7 @@ class SDFetchLocalRecordsOperation: NSOperation {
     }
     
     override func main() {
-        guard !cancelled else { return }
+        if cancelled { self.completed(); return }
         
         let fetchCompletionOperation = NSBlockOperation {
             self.completed()
@@ -78,7 +80,8 @@ class SDFetchLocalRecordsOperation: NSOperation {
         
         var fetchOperations = [NSBlockOperation]()
         for (recordType, records) in recordTypesAndRecords {
-            
+            if cancelled { self.completed(); return }
+
             let fetchRequest = NSFetchRequest(entityName: recordType)
             fetchRequest.predicate = NSPredicate(key: "recordName", comparator: .In, value: records.recordIDs.recordNames)
             
